@@ -1,0 +1,7 @@
+{
+  "name": "Leleco Coradini - Personal Trainer",
+  "description": "Dashboard de gestão de alunos, treinos e financeiro com estética Cyberpunk Fitness.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

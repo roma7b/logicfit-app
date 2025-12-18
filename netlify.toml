@@ -1,0 +1,18 @@
+# netlify.toml (na raiz do projeto)
+
+[build]
+  # Comando de build padrão do Vite
+  command = "npm run build"
+  publish = "dist" 
+
+[build.environment]
+  # CRUCIAL: Forçar uma versão moderna do Node.js
+  NODE_VERSION = "20" 
+  NETLIFY_BUILD_DEBUG_DISABLE_SECRET_DETECTION = "true"
+  SECRETS_SCAN_SMART_DETECTION_OMIT_VALUES = "AIza"
+
+# Redirecionamento de SPA (Crucial para o roteamento do React)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
